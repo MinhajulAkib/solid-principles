@@ -1,0 +1,32 @@
+class Bicycle(IMotion):
+    
+    def drive(self):
+        pass
+        
+    def cycle(self):
+        pass
+        
+    def fly(self):
+        pass
+        
+class Car(IMotion):
+    
+    def drive(self):
+        pass
+        
+    def cycle(self):
+        pass
+        
+    def fly(self):
+        pass
+        
+class Aeroplane(IMotion):
+    
+    def drive(self):
+        pass
+        
+    def cycle(self):
+        pass
+        
+    def fly(self):
+        pass
