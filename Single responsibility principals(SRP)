@@ -1,1 +1,26 @@
+#A class should have one and only one reason to change, meaning that a class should have only one job.
+class Burglar:
+    def __init__(self):
+        self._artifacts=[]     #artifacts is a singleton
 
+    def steal(self,artifact:str):
+        print("putting on the invisibility cloak")
+        print("taking the artifact")
+        self._artifacts.append(artifact)
+        print("removig the invisibility cloak")
+bolbo=Burglar()
+bilbo.steal("Arkenstone")  
+
+
+
+
+#ANOTHER EXAMPLE
+class Singleton:
+    __single = None
+    def __init__( self ):
+        if Singleton.__single:
+            raise Singleton.__single
+        Singleton.__single = self 
+
+
+        
