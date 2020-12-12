@@ -1,0 +1,19 @@
+Class SalaryRaise:
+	
+    def __init__(self, employee_class, salary):       
+    	self.employee_class = employee_class    
+    
+    def get_salary(self):        
+    	return self.salary       
+    
+    def employee_A(self):        
+    	return self.get_salary * 0.02    
+        
+    # To add another employee class we just   
+    # extend the class by adding a function  
+    # If we wanted to add another employee of employee class B with a four (4) percent 
+    # increase in the Salary Raise program, we would have to modify the give_raise method. 
+    # This violates the open closed principle.
+    #  Hence the above code can be modified to be.  
+    def employee_B(self):
+    	return self.get_salary * 0.04
