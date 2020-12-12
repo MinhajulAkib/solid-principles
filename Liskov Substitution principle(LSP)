@@ -1,0 +1,9 @@
+class Calculator:
+
+    def calculate(self, a, b):
+        return a * b
+
+class Divide(Calculator):    
+        
+    def calculate(self, a, b):        
+    	return a / b
